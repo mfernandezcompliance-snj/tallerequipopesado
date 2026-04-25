@@ -22,34 +22,18 @@ const Contact = () => {
 
   return (
     <section id="contacto" className="py-24 bg-surface industrial-bg">
-      <div className="container grid lg:grid-cols-2 gap-12">
-        <div>
+      <div className="container max-w-3xl">
+        <div className="text-center mb-12">
           <div className="text-xs font-semibold tracking-[0.3em] uppercase text-primary mb-3">
             // Contáctanos
           </div>
           <h2 className="text-3xl sm:text-5xl text-foreground mb-6">
             Agenda tu próxima reparación
           </h2>
-          <p className="text-muted-foreground text-lg mb-10">
+          <p className="text-muted-foreground text-lg">
             Cuéntanos qué equipo necesitas atender. Nuestro equipo técnico responde en menos de 24 horas
             hábiles.
           </p>
-
-          <div className="space-y-5">
-            {[
-              { Icon: MapPin, t: "Vía Tocumen, Parque Industrial Las Mañanitas, Panamá" },
-              { Icon: Phone, t: "+507 6000-0000" },
-              { Icon: Mail, t: "servicio@tallerheavyduty.pa" },
-              { Icon: Clock, t: "Lun – Sáb · 7:00 AM – 6:00 PM · Asistencia 24/7" },
-            ].map(({ Icon, t }) => (
-              <div key={t} className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 border border-primary/40 flex items-center justify-center shrink-0">
-                  <Icon className="w-5 h-5 text-primary" />
-                </div>
-                <p className="text-foreground/90 pt-2">{t}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         <form onSubmit={onSubmit} className="bg-card heavy-border p-6 sm:p-8 space-y-5">
