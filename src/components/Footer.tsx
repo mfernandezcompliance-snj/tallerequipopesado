@@ -32,6 +32,14 @@ const Footer = () => (
         <p className="text-sm text-muted-foreground">Aviso de Operación N.º 2024-58741-PA</p>
         <p className="text-sm text-muted-foreground mt-1">RUC: 155847123-2-2024</p>
         <p className="text-sm text-muted-foreground mt-1">Vía Tocumen, Panamá</p>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=V%C3%ADa+Tocumen+Parque+Industrial+Las+Ma%C3%B1anitas+Panam%C3%A1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-3 text-sm text-primary font-semibold hover:underline"
+        >
+          Ver ubicación en Google Maps →
+        </a>
       </div>
     </div>
 
