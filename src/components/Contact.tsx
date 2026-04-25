@@ -80,6 +80,22 @@ const Contact = () => {
             Enviar Solicitud
           </Button>
         </form>
+
+        <div className="mt-12 grid sm:grid-cols-2 gap-5">
+          {[
+            { Icon: MapPin, t: "Vía Tocumen, Parque Industrial Las Mañanitas, Panamá" },
+            { Icon: Phone, t: "+507 6000-0000" },
+            { Icon: Mail, t: "servicio@tallerheavyduty.pa" },
+            { Icon: Clock, t: "Lun – Sáb · 7:00 AM – 6:00 PM · Asistencia 24/7" },
+          ].map(({ Icon, t }) => (
+            <div key={t} className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-primary/10 border border-primary/40 flex items-center justify-center shrink-0">
+                <Icon className="w-5 h-5 text-primary" />
+              </div>
+              <p className="text-foreground/90 pt-2 text-sm">{t}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
